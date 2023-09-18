@@ -11,7 +11,7 @@ function InduvidualArticle(props) {
       <section className='induvidual-container'>
         <Link to='/'><img className='home-logo' src={require('../components/images/home (1).png')}/>Return Home</Link>
         <h1 className='single-article-title'>{makeID().title}</h1>
-        <h4>Author: {makeID().author}</h4>
+        <h4>Author(s): {makeID().author}</h4>
         {makeID().urlToImage === null && <img className='no-article-image' src={require('../components/images/No-Image-Placeholder.svg.png')}></img>}
         <img className='single-article-image' src={makeID().urlToImage}></img>
         <h5 className='source'>Original Source: <a className='original-source' href={makeID().url}>{makeID().source.name}</a></h5>
@@ -25,7 +25,7 @@ function InduvidualArticle(props) {
       <section className='induvidual-container'>
         <Link className='return-home-button' to='/'><img className='home-logo' src={require('../components/images/home (1).png')}/>Return Home</Link>
         <h1 className='single-article-title'>{makeID().title}</h1>
-        <h4>Author: {makeID().author}</h4>
+        <h4>Author(s): {makeID().author}</h4>
         {makeID().urlToImage === null && <img className='no-article-image' src={require('../components/images/No-Image-Placeholder.svg.png')}></img>}
         <img className='single-article-image' src={makeID().urlToImage}></img>
         <h5 className='source'>Original Source: <a className='original-source' href={makeID().url}>{makeID().source.name}</a></h5>

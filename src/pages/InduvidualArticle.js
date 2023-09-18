@@ -6,13 +6,17 @@ function InduvidualArticle(props) {
   const makeID = () => {
     return props.articles.find(art => art.publishedAt === id)
   }
+  let newDate = makeID().publishedAt.split('T')[0].split('-').reverse().join('/')
   if (makeID().content === null) {
     return (
       <section className='induvidual-container'>
-        <Link to='/'><img className='home-logo' alt='small outline of a house' src={require('../components/images/home (1).png')} />Return Home</Link>
+        <Link className='return-home-button' to='/'>Home</Link>
         <h1 className='single-article-title'>{makeID().title}</h1>
-        {makeID().author === null && <h4>Author(s): No author available</h4>}
-        <h4>Author(s): {makeID().author}</h4>
+        <div className='below-header'>
+          <h3 className='single-published-time'>Publish Date: {newDate}</h3>
+          {makeID().author === null && <h4 className='single-author'>Author(s): No author available</h4>}
+          {makeID().author !== null && <h4 className='single-author'>Author(s): {makeID().author}</h4>}
+        </div>
         {makeID().urlToImage === null && <img className='no-article-image' alt='empty camera and label' src={require('../components/images/no-image.png')}></img>}
         <img className='single-article-image' alt={makeID().description} src={makeID().urlToImage} />
         <h5 className='source'>Original Source: <a className='original-source' href={makeID().url}>{makeID().source.name}</a></h5>
@@ -24,14 +28,18 @@ function InduvidualArticle(props) {
   } else {
     return (
       <section className='induvidual-container'>
-        <Link className='return-home-button' to='/'><img className='home-logo' alt='small outline of a house' src={require('../components/images/home (1).png')} />Return Home</Link>
+        <Link className='return-home-button' to='/'>Home</Link>
         <h1 className='single-article-title'>{makeID().title}</h1>
-        <h4>Author(s): {makeID().author}</h4>
+        <div className='below-header'>
+          <h3 className='single-published-time'>Publish Date: {newDate}</h3>
+          {makeID().author === null && <h4 className='single-author'>Author(s): No author(s) available</h4>}
+          {makeID().author !== null && <h4 className='single-author'>Author(s): {makeID().author}</h4>}
+        </div>
         {makeID().urlToImage === null && <img className='no-article-image' alt='empty camera and label' src={require('../components/images/no-image.png')}></img>}
         <img className='single-article-image' alt={makeID().description} src={makeID().urlToImage}></img>
         <h5 className='source'>Original Source: <a className='original-source' href={makeID().url}>{makeID().source.name}</a></h5>
         <section>
-          <p className='single-article-content'>{makeID().content}</p>
+          <p className='single-article-content'>{makeID().content.split('[')[0]}<a className='original-source' href={makeID().url}>click to continue reading</a></p>
         </section>
       </section>
     )

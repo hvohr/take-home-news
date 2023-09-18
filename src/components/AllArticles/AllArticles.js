@@ -1,8 +1,10 @@
+
 function AllArticles(props) {
   return (
     <section>
-      <img src={require(props.urlToImage)}></img>
-      <h2>{props.title}</h2>
+      <h2>articleImage</h2>
+      <h2>articleTitle</h2>
+      <h2>articleDescription</h2>
     </section>
   )
 }

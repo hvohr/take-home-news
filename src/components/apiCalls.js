@@ -1,5 +1,5 @@
 async function getAllArticles() {
-  const response = await fetch("https://newsapi.org/v2/top-headlines?category=business&apiKey=33a2161beece4720940a9f191b2914bd")
+  const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=33a2161beece4720940a9f191b2914bd')
   if (!response.ok) {
     throw new Error(response.status)
   }

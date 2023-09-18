@@ -4,6 +4,36 @@ header {
   border-bottom: 5px double black;
 }
 
+.induvidual-container {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-article-content {
+  width: 90vw;
+  font-size: 3vw;
+}
+
+.source {
+  margin: 5px;
+}
+
+.original-source {
+  text-decoration: underline;
+}
+
+.single-article-title {
+  font-size: 5vw;
+  width: 90vw;
+  margin-bottom: 5px;
+}
+
+.single-article-image {
+  width: 80vw;
+}
+
 .site-logo {
   width: 4.1vw;
   margin-top: 10px;
@@ -29,9 +59,14 @@ main {
 
 .home-logo {
   height: 5vh;
+  margin-right: 5px;
 }
 
 .return-home-button {
+  display: flex;
+  font-size: 2vw;
+  align-items: flex-end;
+  justify-content: center;
   text-decoration: none;
   color: black;
 }

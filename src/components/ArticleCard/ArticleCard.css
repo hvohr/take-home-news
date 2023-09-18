@@ -43,7 +43,7 @@ a {
 
 .info-container {
   display: flex;
-  height: 55%;
+  height: auto;
   flex-direction: column;
   justify-content: space-between;
 }

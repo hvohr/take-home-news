@@ -31,7 +31,7 @@ return (
   <div className="App">
     <Routes>
       <Route path='/' element={<Home category={category} setCategory={setCategory} articles={articles} />} />
-      <Route path='/:id' element={<InduvidualArticle articles={articles} />} />
+      <Route path='/article/:id' element={<InduvidualArticle articles={articles} />} />
     </Routes>
   </div>
 );

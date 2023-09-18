@@ -37,7 +37,7 @@ const [ catChange, setCatChange ] = useState(false)
         </nav>
       </header>
       <section>
-        {(catChange ==='true' && props.category === '') && <h1>Loading...</h1>}
+        {(catChange ==='true' && props.category === '') && <h1 className='loading'>Loading...</h1>}
         <ArticleCard articles={props.articles} />
       </section>
     </section>

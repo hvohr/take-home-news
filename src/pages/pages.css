@@ -49,6 +49,10 @@ header {
   border: 1px solid transparent;
 }
 
+.loading {
+  font-size: 10px;
+}
+
 nav {
   margin-bottom: 5px;
 }

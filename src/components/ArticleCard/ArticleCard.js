@@ -6,7 +6,7 @@ function ArticleCard(props) {
     let newDate = article.publishedAt.split('T')[0].split('-').reverse().join('/')
     if (article.title !== '[Removed]') {
       return (
-        <Link key={Date.now() + props.articles.indexOf(article)} to={`/${article.publishedAt}`}>
+        <Link key={Date.now() + props.articles.indexOf(article)} to={`/article/${article.publishedAt}`}>
           <section className='article-container'>
               {article.urlToImage === null && <img className='no-article-image' alt='empty camera with label' src={require('../images/no-image.png')}></img>}
               <img className='article-image' src={article.urlToImage} alt={article.description} />

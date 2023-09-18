@@ -17,7 +17,6 @@ function App() {
 
   return (
     <div className="App">
-      <NavLink to='/'>Home</NavLink>
       <Routes>
         <Route path ='/' element={<Home articles={articles}/>} />
       </Routes>

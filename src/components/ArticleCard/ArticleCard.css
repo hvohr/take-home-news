@@ -1,0 +1,18 @@
+.article-image {
+  width: 30vw;
+}
+
+.large-article-container {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.article-container {
+  font-family: 'Newsreader', serif;
+
+  border: 5px solid black;
+  width: 40vw;
+  margin: 10px;
+  padding: 10px;
+}

@@ -1,4 +1,5 @@
 import '../App/App.css'
+import Error from '../../pages/Error'
 import { Routes, Route, NavLink } from "react-router-dom";
 import Home from '../../pages/Home'
 import InduvidualArticle from '../../pages/InduvidualArticle'
@@ -32,6 +33,7 @@ return (
     <Routes>
       <Route path='/' element={<Home category={category} setCategory={setCategory} articles={articles} />} />
       <Route path='/article/:id' element={<InduvidualArticle articles={articles} />} />
+      <Route path='*' element={<Error />} />
     </Routes>
   </div>
 );

@@ -1,17 +1,44 @@
 import './pages.css'
 import ArticleCard from '../components/ArticleCard/ArticleCard'
+import { useState } from 'react'
 
 function Home(props) {
-  console.log(props)
-  // const [category, setCategory] = useState("")
+const [ catChange, setCatChange ] = useState(false)
   return (
     <section className='home-container'>
       <header>
         <img alt='two standing stick figures shaking hands' className='site-logo' src={require('../components/images/handshake.png')} />
         <h1 className='title'>USAChronicle</h1>
+        <nav>
+          <button className='category-button' onClick={() => {
+            props.setCategory('business')
+            setCatChange(true)}
+          }>Business</button>
+          <button className='category-button' onClick={() => {
+            props.setCategory('health')
+            setCatChange(true)
+          }}>Health</button>
+          <button className='category-button' onClick={() => {
+            props.setCategory('technology')
+            setCatChange(true)
+          }}>Technology</button>
+          <button className='category-button' onClick={() => {
+            props.setCategory('science')
+            setCatChange(true)
+          }}>Science</button>
+          <button className='category-button' onClick={() => {
+            props.setCategory('entertainment')
+            setCatChange(true)
+          }}>Entertainment</button>
+          <button className='category-button' onClick={() => {
+            props.setCategory('sports')
+            setCatChange(true)
+          }}>Sports</button>
+        </nav>
       </header>
       <section>
-        <ArticleCard articles={props.articles}/>
+        {(catChange ==='true' && props.category === '') && <h1 className='loading'>Loading...</h1>}
+        <ArticleCard articles={props.articles} />
       </section>
     </section>
   )

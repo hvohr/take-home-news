@@ -130,3 +130,80 @@ main {
   font-style: italic;
   margin: 20px;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 8vw;
+  }
+
+  .site-logo {
+    width: 8vw;
+  }
+
+  .category-button {
+    font-size: 5vw;
+  }
+
+  .single-article-content {
+    width: 85vw;
+    font-size: 4.5vw;
+  }
+  
+  .single-article-title {
+    font-size: 7vw;
+    width: 90vw;
+    margin: 20px;
+  }
+  
+  .single-article-image {
+    width: 90vw;
+  }
+  
+  .single-published-time,
+  .single-author {
+    margin: 15px;
+    font-size: 3.5vw;
+  }
+  .return-home-button {
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: 8vw;
+  }
+
+  .site-logo {
+    width: 8vw;
+  }
+
+  .category-button {
+    font-size: 5vw;
+  }
+
+  .single-article-content {
+    width: 85vw;
+    font-size: 4.5vw;
+  }
+  
+  .single-article-title {
+    font-size: 7vw;
+    width: 90vw;
+    margin: 20px;
+  }
+  
+  .single-article-image {
+    width: 90vw;
+  }
+  
+  .single-published-time,
+  .single-author {
+    margin: 15px;
+    font-size: 3.5vw;
+  }
+  .return-home-button {
+    font-size: 5vw;
+  }
+}

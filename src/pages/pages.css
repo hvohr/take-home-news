@@ -1,0 +1,24 @@
+header {
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px double black;
+}
+
+.site-logo {
+  width: 4.1vw;
+  margin-top: 10px;
+}
+
+/* .tagline {
+  font-weight: 400;
+  font-family: 'Newsreader', serif;
+  font-size: 2.8vh;
+} */
+
+.title {
+  align-items: center;
+  font-size: 4.1vw;
+  font-style: italic;
+  font-family: 'Newsreader', serif;
+  margin: 20px;
+}

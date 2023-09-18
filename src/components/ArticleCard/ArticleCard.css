@@ -1,18 +1,27 @@
 .article-image {
-  width: 30vw;
+  width: 20vw;
+}
+
+.article-description {
+  font-size: 1vw;
+}
+
+.article-title {
+  font-size: 1.2vw;
 }
 
 .large-article-container {
   display:flex;
+  margin: 10px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .article-container {
+  cursor: pointer;
   font-family: 'Newsreader', serif;
-
   border: 5px solid black;
-  width: 40vw;
+  width: 20vw;
   margin: 10px;
   padding: 10px;
 }

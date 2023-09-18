@@ -9,7 +9,7 @@ In order to clone this application:
 - cd (change directory) into the project.
 - Run `npm install`
 - Run `npm start` to see the localhost in your browser.
-- [Deploy Link](https://clearskies.vercel.app/) for deployed viewing
+- [Deploy Link](https://take-home-news.vercel.app/) for deployed viewing
 
 ### Preview of App:
 - Desktop View
@@ -18,7 +18,8 @@ In order to clone this application:
 
 
 - Mobile View
-![Screenshot 2023-09-18 at 4 31 36 PM](https://user-images.githubusercontent.com/123392693/268788725-f31a366e-8611-4d11-b847-8b9f4fdb55fb.jpeg)
+![Screenshot 2023-09-18 at 5 02 05 PM](https://user-images.githubusercontent.com/123392693/268792615-d9269a46-5101-4ea5-9c9e-3d91fde9c8cc.jpeg)
+![Screenshot 2023-09-18 at 5 01 58 PM](https://user-images.githubusercontent.com/123392693/268792618-139f59be-0bf3-4f6d-9eab-172c25d76245.jpeg)
 ![Screenshot 2023-09-18 at 4 31 43 PM](https://user-images.githubusercontent.com/123392693/268788727-af892cbd-8452-4d6e-b653-a256365260bb.jpeg)
 
 

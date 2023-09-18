@@ -10,7 +10,7 @@ function ArticleCard(props) {
         <Link key={Date.now() + props.articles.indexOf(article)} to={`/${article.publishedAt}`}>
           <section className='article-container'>
             {/* <div className='image-container'> */}
-              {article.urlToImage === null && <img className='no-article-image' src={require('../images/No-Image-Placeholder.svg.png')}></img>}
+              {article.urlToImage === null && <img className='no-article-image' src={require('../images/no-image.png')}></img>}
               <img className='article-image' src={article.urlToImage} alt={article.description} />
             {/* </div> */}
             <div className='info-container'>

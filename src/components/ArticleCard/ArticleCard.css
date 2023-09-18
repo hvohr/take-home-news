@@ -3,6 +3,10 @@
   /* width: 25vw; */
 }
 
+.no-article-image {
+  height: 45%;
+}
+
 .article-description {
   font-size: 1.2vw;
   padding: 5px;

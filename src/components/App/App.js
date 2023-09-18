@@ -16,15 +16,15 @@ function App() {
   //   )
   // }, [])
 
-  function getCategory() {
-    if (category !== '') {
-      getSpecificCategory(category).then(
-        data => setArticles(data.articles)
-      )
-    }
-  }
+  // function getCategory() {
+  //   if (category !== '') {
+  //     getSpecificCategory(category).then(
+  //       data => setArticles(data.articles)
+  //     )
+  //   }
+  // }
   // useEffect (() => {
-    // getCategory()
+  //   getCategory()
   // }, [category])
 
 return (

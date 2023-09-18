@@ -40,9 +40,15 @@ a {
   justify-content: space-between;
   height: 90%;
   cursor: pointer;
-  border: 5px solid black;
+  box-shadow: 6px 7px #5d5b5b7d;
+  border: 1px solid black;
   width: 25vw;
   margin: 20px;
+  transition: all .2s ease-in-out; 
+}
+
+.article-container:hover {
+  transform: scale(1.1); 
 }
 
 .info-container {

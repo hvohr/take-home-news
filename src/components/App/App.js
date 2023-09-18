@@ -1,6 +1,6 @@
 import '../App/App.css'
 import Error from '../../pages/Error'
-import { Routes, Route, NavLink } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from '../../pages/Home'
 import InduvidualArticle from '../../pages/InduvidualArticle'
 import { data } from '../mockData'

@@ -9,6 +9,10 @@ header {
   margin-top: 10px;
 }
 
+main {
+  height: 80vh;
+}
+
 /* .tagline {
   font-weight: 400;
   font-family: 'Newsreader', serif;

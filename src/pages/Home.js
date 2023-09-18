@@ -1,22 +1,18 @@
 import './pages.css'
-import getAllArticles from '../components/apiCalls'
-import { useEffect, useState } from 'react'
-import data from '../components/mockData'
-import AllArticles from '../components/AllArticles/AllArticles'
+import ArticleCard from '../components/ArticleCard/ArticleCard'
 
-function Home() {
-  const [category, setCategory] = useState("")
-  const [articles, setArticles] = useState()
-
+function Home(props) {
+  console.log(props)
+  // const [category, setCategory] = useState("")
   return (
-    <section>
+    <section className='home-container'>
       <header>
         <img alt='two standing stick figures shaking hands' className='site-logo' src={require('../components/images/handshake.png')} />
         <h1 className='title'>USAChronicle</h1>
       </header>
-      <main>
-        <AllArticles category={category} />
-      </main>
+      <section>
+        <ArticleCard articles={props.articles}/>
+      </section>
     </section>
   )
 }

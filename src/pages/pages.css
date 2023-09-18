@@ -9,6 +9,14 @@ header {
   margin-top: 10px;
 }
 
+.category-button {
+  font-size: 3.5vh;
+  margin: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 main {
   height: 80vh;
 }

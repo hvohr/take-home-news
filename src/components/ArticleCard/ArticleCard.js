@@ -4,15 +4,12 @@ import { Link } from 'react-router-dom'
 function ArticleCard(props) {
   const articleList = props.articles.map((article) => {
     let newDate = article.publishedAt.split('T')[0].split('-').reverse().join('/')
-    console.log(newDate)
     if (article.title !== '[Removed]') {
       return (
         <Link key={Date.now() + props.articles.indexOf(article)} to={`/${article.publishedAt}`}>
           <section className='article-container'>
-            {/* <div className='image-container'> */}
-              {article.urlToImage === null && <img className='no-article-image' src={require('../images/no-image.png')}></img>}
+              {article.urlToImage === null && <img className='no-article-image' alt='empty camera with label' src={require('../images/no-image.png')}></img>}
               <img className='article-image' src={article.urlToImage} alt={article.description} />
-            {/* </div> */}
             <div className='info-container'>
               <h3 className='article-title'>{article.title}</h3>
               <p className='article-description'>{article.description}</p>

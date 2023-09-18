@@ -10,7 +10,7 @@ const [ catChange, setCatChange ] = useState(false)
         <h1>An server error has occured ! -- Please refresh the page</h1>
       </section>}
       {props.error === false && <header>
-        <img alt='two standing stick figures shaking hands' className='site-logo' src={require('../components/images/handshake.png')} />
+        <img alt='outline of newspaper frontpage' className='site-logo' src={require('../components/images/newspaper-folded.png')} />
         <h1 className='title'>USAChronicle</h1>
         <nav>
           <button className='category-button' onClick={() => {
@@ -39,10 +39,10 @@ const [ catChange, setCatChange ] = useState(false)
           }}>Sports</button>
         </nav>
       </header>}
-      <section>
+      {props.error === false && <section>
         {(catChange ==='true' && props.category === '') && <h1 className='loading'>Loading...</h1>}
         <ArticleCard articles={props.articles} />
-      </section>
+      </section>}
     </section>
   )
 }

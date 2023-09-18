@@ -12,33 +12,32 @@ function App() {
   const [category, setCategory] = useState('')
   const [error, setError] = useState(false)
 
+  useEffect(() => {
+    getAllArticles().then(
+      data => {
+        setArticles(data.articles)
+        setError(false)
+      }
+    ).catch((error) => {
+      setError(true)
+    })
+  }, [])
 
-  // useEffect(() => {
-  //   getAllArticles().then(
-  //     data => {
-  //       setArticles(data.articles)
-  //       setError(false)
-  //     }
-  //   ).catch((error) => {
-  //     setError(true)
-  //   })
-  // }, [])
-
-  // function getCategory() {
-  //   if (category !== '') {
-  //     getSpecificCategory(category).then(
-  //       data => {
-  //         setArticles(data.articles)
-  //       setError(false)
-  //       }
-  //     ).catch((error) => {
-  //     setError(true)
-  //     })
-  //   }
-  // }
-  // useEffect(() => {
-  //   getCategory()
-  // }, [category])
+  function getCategory() {
+    if (category !== '') {
+      getSpecificCategory(category).then(
+        data => {
+          setArticles(data.articles)
+        setError(false)
+        }
+      ).catch((error) => {
+      setError(true)
+      })
+    }
+  }
+  useEffect(() => {
+    getCategory()
+  }, [category])
 
   return (
     <div className="App">

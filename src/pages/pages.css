@@ -39,6 +39,10 @@ header {
   margin-top: 10px;
 }
 
+.server-error {
+  font-size: 10vw;
+}
+
 .return-home-error {
   font-size: 2.2vw;
   background-color: white;

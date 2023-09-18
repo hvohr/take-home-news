@@ -6,7 +6,10 @@ function Home(props) {
 const [ catChange, setCatChange ] = useState(false)
   return (
     <section className='home-container'>
-      <header>
+      {props.error === true && <section className='server-error'>
+        <h1>An server error has occured ! -- Please refresh the page</h1>
+      </section>}
+      {props.error === false && <header>
         <img alt='two standing stick figures shaking hands' className='site-logo' src={require('../components/images/handshake.png')} />
         <h1 className='title'>USAChronicle</h1>
         <nav>
@@ -35,7 +38,7 @@ const [ catChange, setCatChange ] = useState(false)
             setCatChange(true)
           }}>Sports</button>
         </nav>
-      </header>
+      </header>}
       <section>
         {(catChange ==='true' && props.category === '') && <h1 className='loading'>Loading...</h1>}
         <ArticleCard articles={props.articles} />

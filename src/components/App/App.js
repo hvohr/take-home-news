@@ -19,6 +19,7 @@ function App() {
         setError(false)
       }
     ).catch((error) => {
+      console.log(error)
       setError(true)
     })
   }, [])
@@ -28,13 +29,15 @@ function App() {
       getSpecificCategory(category).then(
         data => {
           setArticles(data.articles)
-        setError(false)
+          setError(false)
         }
       ).catch((error) => {
-      setError(true)
+        console.log(error)
+        setError(true)
       })
     }
   }
+  
   useEffect(() => {
     getCategory()
   }, [category])

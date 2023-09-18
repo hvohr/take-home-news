@@ -12,8 +12,8 @@ header {
 }
 
 .single-article-content {
-  width: 90vw;
-  font-size: 3vw;
+  width: 80vw;
+  font-size: 2.5vw;
 }
 
 .source {
@@ -25,18 +25,30 @@ header {
 }
 
 .single-article-title {
-  font-size: 5vw;
+  font-size: 4vw;
   width: 90vw;
-  margin-bottom: 5px;
+  margin: 20px;
 }
 
 .single-article-image {
-  width: 80vw;
+  width: 70vw;
+}
+
+.single-published-time,
+.single-author {
+  margin: 15px;
+  font-size: 1.5vw;
 }
 
 .site-logo {
   width: 4.1vw;
   margin-top: 10px;
+}
+
+.below-header {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .server-error {
@@ -67,7 +79,8 @@ header {
   width: 60vw;
 }
 
-.category-button {
+.category-button,
+.return-home-button {
   font-size: 2.5vw;
   margin: 5px;
   background: none;
@@ -85,7 +98,8 @@ nav {
   margin-bottom: 5px;
 }
 
-.category-button:hover {
+.category-button:hover,
+.return-home-button:hover {
   border: 1px solid black
 }
 
@@ -99,17 +113,13 @@ main {
   height: 80vh;
 }
 
-.home-logo {
-  width: 3vw;
-  margin-right: 5px;
-}
-
 .return-home-button {
   display: flex;
-  margin-top: 5px;
-  font-size: 2vw;
-  align-items: flex-end;
+  margin: 10px;
+  font-size: 1.9vw;
+  align-items: center;
   justify-content: center;
+  text-align: center;
   text-decoration: none;
   color: black;
 }

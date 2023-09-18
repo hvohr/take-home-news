@@ -10,12 +10,30 @@ const [ catChange, setCatChange ] = useState(false)
         <img alt='two standing stick figures shaking hands' className='site-logo' src={require('../components/images/handshake.png')} />
         <h1 className='title'>USAChronicle</h1>
         <nav>
-          <button className='category-button' onClick={() => props.setCategory('business')}>Business</button>
-          <button className='category-button' onClick={() => props.setCategory('health')}>Health</button>
-          <button className='category-button' onClick={() => props.setCategory('technology')}>Technology</button>
-          <button className='category-button' onClick={() => props.setCategory('science')}>Science</button>
-          <button className='category-button' onClick={() => props.setCategory('entertainment')}>Entertainment</button>
-          <button className='category-button' onClick={() => props.setCategory('sports')}>Sports</button>
+          <button className='category-button' onClick={() => {
+            props.setCategory('business')
+            setCatChange(true)}
+          }>Business</button>
+          <button className='category-button' onClick={() => {
+            props.setCategory('health')
+            setCatChange(true)
+          }}>Health</button>
+          <button className='category-button' onClick={() => {
+            props.setCategory('technology')
+            setCatChange(true)
+          }}>Technology</button>
+          <button className='category-button' onClick={() => {
+            props.setCategory('science')
+            setCatChange(true)
+          }}>Science</button>
+          <button className='category-button' onClick={() => {
+            props.setCategory('entertainment')
+            setCatChange(true)
+          }}>Entertainment</button>
+          <button className='category-button' onClick={() => {
+            props.setCategory('sports')
+            setCatChange(true)
+          }}>Sports</button>
         </nav>
       </header>
       <section>

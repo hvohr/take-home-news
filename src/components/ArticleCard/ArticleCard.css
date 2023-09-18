@@ -1,27 +1,49 @@
 .article-image {
-  width: 20vw;
+  height: 45%;
+  /* width: 25vw; */
 }
 
 .article-description {
-  font-size: 1vw;
+  font-size: 1.2vw;
+  padding: 5px;
 }
 
 .article-title {
   font-size: 1.2vw;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.published-time {
+  font-size: 1.2vw;
 }
 
 .large-article-container {
-  display:flex;
-  margin: 10px;
-  justify-content: center;
+  display: flex;  
   flex-wrap: wrap;
+  margin: 20px;
+  justify-content: center;
 }
 
 .article-container {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
   cursor: pointer;
-  font-family: 'Newsreader', serif;
   border: 5px solid black;
-  width: 20vw;
-  margin: 10px;
-  padding: 10px;
+  width: 25vw;
+  margin: 20px;
+}
+
+.info-container {
+  display: flex;
+  height: 55%;
+  flex-direction: column;
+  justify-content: space-between;
 }

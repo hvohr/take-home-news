@@ -3,7 +3,7 @@ import { Routes, Route, NavLink } from "react-router-dom";
 import Home from '../../pages/Home'
 import InduvidualArticle from '../../pages/InduvidualArticle'
 import { data } from '../mockData'
-import { getAllArticles } from '../apiCalls'
+import { getAllArticles, getSpecificCategory} from '../apiCalls'
 import { useEffect, useState } from 'react'
 
 function App() {
@@ -23,7 +23,6 @@ function App() {
       )
     }
   }
-}
   // useEffect (() => {
     // getCategory()
   // }, [category])

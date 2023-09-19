@@ -9,7 +9,6 @@ In order to clone this application:
 - cd (change directory) into the project.
 - Run `npm install`
 - Run `npm start` to see the localhost in your browser.
-- [Deploy Link](https://take-home-news.vercel.app/) for deployed viewing
 
 ### Preview of App:
 - Desktop View
